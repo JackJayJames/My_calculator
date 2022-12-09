@@ -1,3 +1,7 @@
+:root {
+    --padding-kalk: 3%;
+}
+
 section {
     display: flex;
     justify-content: center;
@@ -5,21 +9,21 @@ section {
 
 /*Hlavicka kalkulačky*/
 #kalkulacka{
-    border: 1px dotted blue;
+    box-sizing: border-box;
+    border: 5px solid black;
     width: 40%;
     height: 40%;
 }
 #kal-output{
-    border: 1px dotted green;
     height: 60px;
-    padding: 3%;
+    padding: var(--padding-kalk);
 }
 #output {
     border: 2px solid black;
     width: 100%;
     height: 100%;
-    line-height: 100%;
-    font-size: 100%;
+    line-height: 60px;
+    font-size: 150%;
     text-align: center;
 }
 
@@ -28,9 +32,28 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 3%;
+    padding: var(--padding-kalk);
 }
 .radek {
     display: flex;
     justify-content: space-evenly;
+    gap: 5%;
+}
+.tlacitka {
+    width: 100%;
+    height: 70px;
+    font-size: 170%;
+    background: white;
+    border-radius: 10px;
+}
+#rovna {
+    width: 100%;
+}
+.tlacitka:hover {
+    box-shadow: 0 0 2px 2px rgb(33, 3, 3);
+}
+.tlacitka:active {
+    transition: .05s;
+    background: black;
+    color: white
 }
