@@ -3,6 +3,7 @@ section {
     justify-content: center;
 }
 
+/*Hlavicka kalkulačky*/
 #kalkulacka{
     border: 1px dotted blue;
     width: 40%;
@@ -20,4 +21,16 @@ section {
     line-height: 100%;
     font-size: 100%;
     text-align: center;
+}
+
+/*Tělo hlavičky*/
+#con-tlacitka {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3%;
+}
+.radek {
+    display: flex;
+    justify-content: space-evenly;
 }
