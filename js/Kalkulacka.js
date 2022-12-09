@@ -10,6 +10,7 @@ class Kalkulacka {
     _obsluhaTlacitek(){
         for(let button of this._tlacitka){
             button.onclick = () => {
+                this.output.textContent = button.innerHTML;
             };
         }
     }
