@@ -2,3 +2,9 @@ section {
     display: flex;
     justify-content: center;
 }
+
+#kalkulacka{
+    border: 1px dotted blue;
+    width: 40%;
+    height: 40%;
+}
